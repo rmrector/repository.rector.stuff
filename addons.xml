@@ -10,7 +10,7 @@
 		<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Stuff goes here.</summary>
+		<summary lang="en">A little place for my stuff.</summary>
 		<description lang="en">I'm Rector, I do stuff, I put it here.</description>
 		<platform>all</platform>
 		<disclaimer />

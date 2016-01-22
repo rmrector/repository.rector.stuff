@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.0" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="Rector Repository">
+		<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Stuff goes here.</summary>
+		<description lang="en">I'm Rector, I do stuff, I put it here.</description>
+		<platform>all</platform>
+		<disclaimer />
+	</extension>
+</addon>
+<addon id="service.stinger.notification" name="Stinger scene notification" version="0.6.0" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.simplejson" version="3.3.0" />
+		<import addon="script.module.requests" version="2.9.1" />
+	</requires>
+	<extension point="xbmc.service" start="login" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">This service notifies you of stinger scenes in the currently playing movie.</summary>
+		<description lang="en">This add-on notifies you of stinger scenes in the current movie. It pops up a simple message notification when the credits roll (or at least towards the end). It uses tags to identify movies that have a stinger scene, which can be automatically added by the Universal Movie Scraper from The Movie Database, as aftercreditsstinger and duringcreditsstinger.</description>
+		<platform>all</platform>
+		<source>https://github.com/rmrector/service.stinger.notification</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=254004</forum>
+		<license>The MIT License</license>
+		<disclaimer />
+		<website />
+		<language />
+		<email />
+	</extension>
+</addon>
+	<addon id="service.tweak.lastplayed" name="Tweak last played time" version="0.5.1" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.python" version="2.20.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.service" start="login" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">This service tweaks when the last played time for videos is updated to be more useful.</summary>
+		<description lang="en">This add-on changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
+		<platform>all</platform>
+		<source>https://github.com/rmrector/service.tweak.lastplayed</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=253816</forum>
+		<license>The MIT License</license>
+		<disclaimer />
+		<website />
+		<language />
+		<email />
+	</extension>
+</addon>
+</addons>

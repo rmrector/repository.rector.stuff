@@ -1,4 +1,6 @@
-v0.5.0 (2015-01-30)
+v0.5.1 (2016-02-03)
+- Properly throttle a loop on the window watcher
+v0.5.0 (2016-01-30)
 - And begin.
 - Plugin paths to gather images into a list for multiimage or lists.
 - A temporary workaround for a rarely encountered artwork bug in Kodi.

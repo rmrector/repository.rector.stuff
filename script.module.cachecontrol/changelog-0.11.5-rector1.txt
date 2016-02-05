@@ -1,0 +1,2 @@
+v0.11.5-rector1 (2016-01-02)
+- CacheControl 0.11.5 with rmcgibbo/stream PR merged to cache chunked responses

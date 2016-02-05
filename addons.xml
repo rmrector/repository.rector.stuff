@@ -35,6 +35,24 @@
 		<email />
 	</extension>
 </addon>
+<addon id="script.module.cachecontrol" name="CacheControl" version="0.11.5-rector1" provider-name="Eric Larson, rmrector">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0" />
+    <import addon="script.module.lockfile" version="0.12.2" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python Requests caching</summary>
+    <description>Packed for KODI from https://github.com/ionrock/cachecontrol. [CR]Has a fix merged in.</description>
+    <platform>all</platform>
+    <language />
+    <license>Apache 2</license>
+    <forum />
+    <website>http://cachecontrol.readthedocs.org/en/latest/</website>
+    <source>https://github.com/rmrector/script.module.cachecontrol</source>
+    <email />
+  </extension>
+</addon>
 <addon id="script.module.lockfile" name="lockfile" version="0.12.2" provider-name="Skip Montanaro, rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0" />

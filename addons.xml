@@ -25,6 +25,31 @@
 		<email />
 	</extension>
 </addon>
+<addon id="context.artwork.downloader.gui" name="Select Artwork to Download" version="1.0.2" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.addon" version="15.0.0" />
+		<import addon="xbmc.python" version="2.20.0" />
+	</requires>
+	<extension point="kodi.context.item" library="context.py">
+		<item>
+			<label>32000</label>
+			<visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)|Container.Content(episodes)</visible>
+			<parent>kodi.core.manage</parent>
+		</item>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<summary lang="en">Show Artwork Beef GUI for the selected item.</summary>
+		<description lang="en">Show Artwork Beef GUI for the selected item. Added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
+		<source>https://github.com/rmrector/context.artwork.downloader.gui</source>
+		<license>The MIT License</license>
+		<disclaimer lang="en" />
+		<platform>all</platform>
+		<language />
+		<website />
+		<forum />
+		<email />
+	</extension>
+</addon>
 <addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>

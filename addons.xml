@@ -35,6 +35,23 @@
 		<email />
 	</extension>
 </addon>
+<addon id="script.module.lockfile" name="lockfile" version="0.12.2" provider-name="Skip Montanaro, rmrector">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Python Requests caching</summary>
+		<description>Packed for KODI from http://git.openstack.org/cgit/openstack/pylockfile. [CR]Recently deprecated, but does what it needs to for now.</description>
+		<platform>all</platform>
+		<language />
+		<license>The MIT License</license>
+		<forum />
+		<website>http://docs.openstack.org/developer/pylockfile</website>
+		<source>https://github.com/rmrector/script.module.lockfile</source>
+		<email />
+	</extension>
+</addon>
 <addon id="service.stinger.notification" name="Stinger scene notification" version="0.6.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />

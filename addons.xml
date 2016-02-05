@@ -66,6 +66,32 @@
 		<disclaimer />
 	</extension>
 </addon>
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.3.0" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="xbmc.json" version="6.20.0" />
+		<import addon="script.module.simplejson" version="3.3.0" />
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.cachecontrol" version="0.11.5" />
+		<import addon="script.module.devhelper" version="0.1.0" />
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" start="login" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Adds extra artwork for your media from wonderful web services.</summary>
+		<description lang="en">Adds extra artwork for TV shows and movies into your library.</description>
+		<disclaimer lang="en">Artwork sources: fanart.tv, TheTVDB.com, The Movie Database</disclaimer>
+		<license>The MIT License</license>
+		<platform>all</platform>
+		<language />
+		<website />
+		<source />
+		<forum />
+		<email />
+	</extension>
+</addon>
 <addon id="script.artwork.helper" name="Artwork Helper" version="0.5.1" provider-name="rrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />

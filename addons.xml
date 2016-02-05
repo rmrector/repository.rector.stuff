@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="context.artwork.downloader.auto" name="Download All Artwork" version="1.0.2" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.addon" version="15.0.0" />
+		<import addon="xbmc.python" version="2.20.0" />
+	</requires>
+	<extension point="kodi.context.item" library="context.py">
+		<item>
+			<label>32000</label>
+			<visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
+			<parent>kodi.core.manage</parent>
+		</item>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<summary lang="en">Download all missing artwork configured in Artwork Beef for the selected item.</summary>
+		<description lang="en">Download all missing artwork configured in Artwork Beef for the selected item. Added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
+		<source>https://github.com/rmrector/context.artwork.downloader.auto</source>
+		<license>The MIT License</license>
+		<disclaimer lang="en" />
+		<platform>all</platform>
+		<language />
+		<website />
+		<forum />
+		<email />
+	</extension>
+</addon>
 <addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>

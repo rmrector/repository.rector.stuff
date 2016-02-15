@@ -1,3 +1,8 @@
+v0.4.0 (2016-02-15)
+- Fix persistent notification being too persistent
+- Add settings to select artwork types to automatically download
+- Sort and limit posters by height, not width
+
 v0.3.2 (2016-02-09)
 - better handle rapid fire library updates
 - Use persistent notification for progress

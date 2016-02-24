@@ -207,7 +207,7 @@
 		<email />
 	</extension>
 </addon>
-	<addon id="service.tweak.lastplayed" name="Tweak last played time" version="0.5.1" provider-name="rmrector">
+	<addon id="service.tweak.lastplayed" name="Tweak last played time" version="0.5.2" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>

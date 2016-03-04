@@ -66,22 +66,22 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.4.0" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.5.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
 		<import addon="script.module.simplejson" version="3.3.0" />
 		<import addon="script.module.requests" version="2.9.1" />
 		<import addon="script.module.cachecontrol" version="0.11.5" />
-		<import addon="script.module.devhelper" version="0.1.0" />
+		<import addon="script.module.devhelper" version="0.1.3" />
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.service" start="login" library="service.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Adds extra artwork for your media from wonderful web services.</summary>
-		<description lang="en">Adds extra artwork for TV shows and movies into your library.</description>
+		<summary lang="en">Automatically adds extra artwork for your media.</summary>
+		<description lang="en">Artwork Beef automatically adds extra artwork for TV shows and movies into your library. It grabs them from wonderful web services and the filesystem.</description>
 		<disclaimer lang="en">Artwork sources: fanart.tv, TheTVDB.com, The Movie Database</disclaimer>
 		<source>https://github.com/rmrector/script.artwork.beef</source>
 		<forum>http://forum.kodi.tv/showthread.php?tid=258886</forum>

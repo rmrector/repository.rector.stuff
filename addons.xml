@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="context.artwork.downloader.auto" name="Download All Artwork" version="1.0.2" provider-name="rmrector">
+<addon id="context.artwork.downloader.auto" name="Add missing artwork" version="1.0.3" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
 		<import addon="xbmc.python" version="2.20.0" />
@@ -13,8 +13,8 @@
 		</item>
 	</extension>
 	<extension point="kodi.addon.metadata">
-		<summary lang="en">Download all missing artwork configured in Artwork Beef for the selected item.</summary>
-		<description lang="en">Download all missing artwork configured in Artwork Beef for the selected item. Added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
+		<summary lang="en">Add missing artwork to the library for the selected item.</summary>
+		<description lang="en">Adds all missing artwork configured in Artwork Beef for the selected item. This item is added to the 'Manage...' sub-menu. It also supports Artwork Downloader with a setting.</description>
 		<source>https://github.com/rmrector/context.artwork.downloader.auto</source>
 		<license>The MIT License</license>
 		<disclaimer lang="en" />

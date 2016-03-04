@@ -1,3 +1,6 @@
+v1.0.3 (2016-03-04)
+- Change text and icon
+
 v1.0.2 (2016-02-04)
 - Beef it (use new add-on Artwork Beef)
 v1.0.1 (2015-09-19)

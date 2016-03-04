@@ -25,7 +25,7 @@
 		<email />
 	</extension>
 </addon>
-<addon id="context.artwork.downloader.gui" name="Select Artwork to Download" version="1.0.2" provider-name="rmrector">
+<addon id="context.artwork.downloader.gui" name="Select artwork to add" version="1.0.3" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
 		<import addon="xbmc.python" version="2.20.0" />
@@ -39,7 +39,7 @@
 	</extension>
 	<extension point="kodi.addon.metadata">
 		<summary lang="en">Show Artwork Beef GUI for the selected item.</summary>
-		<description lang="en">Show Artwork Beef GUI for the selected item. Added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
+		<description lang="en">Shows the Artwork Beef GUI for the selected item, allowing you to choose the exact artwork you want to add. This item is added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
 		<source>https://github.com/rmrector/context.artwork.downloader.gui</source>
 		<license>The MIT License</license>
 		<disclaimer lang="en" />

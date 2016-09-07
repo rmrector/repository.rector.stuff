@@ -50,6 +50,31 @@
 		<email />
 	</extension>
 </addon>
+<addon id="context.playrandomvideo" name="Play Random Videos" version="1.0.5" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.addon" version="15.0.0" />
+		<import addon="xbmc.python" version="2.20.0" />
+		<import addon="script.playrandomvideos" version="1.0.0" />
+	</requires>
+	<extension point="kodi.context.item" library="context.py">
+		<item>
+			<label>$ADDON[script.playrandomvideos 32100]</label>
+			<visible>Window.IsVisible(videos) + !Container.Content(movies) + !Container.Content(episodes) + !SubString(ListItem.FolderPath, plugin, Left) + !SubString(ListItem.FolderPath, addons, Left) + !SubString(ListItem.FolderPath, sources, Left)</visible>
+		</item>
+	</extension>
+	<extension point="kodi.addon.metadata">
+		<summary lang="en">Plays random videos from the selected list.</summary>
+		<description lang="en">Plays random videos from the selected list. It can play random episodes from TV shows, movies from genres/sets/years/tags, and videos from playlists, the filesystem, and just about anything else, other than plugins.</description>
+		<disclaimer lang="en" />
+		<platform>all</platform>
+		<source>https://github.com/rmrector/context.playrandomvideo</source>
+		<forum>http://forum.kodi.tv/showthread.php?tid=238613</forum>
+		<license>The MIT License</license>
+		<language />
+		<website />
+		<email />
+  </extension>
+</addon>
 <addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -168,7 +193,7 @@
 		<email />
 	</extension>
 </addon>
-<addon id="script.playrandomvideos" name="Play Random Videos" version="1.1.0~beta1" provider-name="rmrector">
+<addon id="script.playrandomvideos" name="Play Random Videos" version="1.1.0~beta2" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0" />
 		<import addon="script.module.simplejson" version="3.3.0"/>

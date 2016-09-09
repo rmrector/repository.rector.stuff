@@ -91,14 +91,14 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.6.1" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.6.2" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
 		<import addon="script.module.simplejson" version="3.3.0" />
 		<import addon="script.module.requests" version="2.9.1" />
 		<import addon="script.module.cachecontrol" version="0.11.5" />
-		<import addon="script.module.devhelper" version="0.1.3" />
+		<import addon="script.module.devhelper" version="0.1.4" />
 	</requires>
 	<extension point="xbmc.python.script" library="default.py">
 		<provides>executable</provides>

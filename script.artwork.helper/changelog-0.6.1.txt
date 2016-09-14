@@ -1,3 +1,7 @@
+v0.6.1 (2016-09-13)
+- Build proper path for extrafanart
+- extrafanart/thumbs can stay disabled if using new version of Artwork Beef
+
 v0.6.0 (2016-09-08)
 - Add setting to include extrafanart and extrathumbs
 

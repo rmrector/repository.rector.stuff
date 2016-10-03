@@ -156,7 +156,7 @@
     <email />
   </extension>
 </addon>
-<addon id="script.module.devhelper" name="Development Helper" version="0.1.4" provider-name="rmrector">
+<addon id="script.module.devhelper" name="Development Helper" version="0.1.5" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />

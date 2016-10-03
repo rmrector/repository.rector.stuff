@@ -1,3 +1,7 @@
+v0.1.5
+- Further refine the datetime error workaround
+- Allow get_seasons to return all seasons
+
 v0.1.4 (2016-09-08)
 - Fix intermittent datetime error
 

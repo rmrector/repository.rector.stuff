@@ -1,3 +1,9 @@
+v0.7.0 (2016-10-11)
+- Add paths for container and smartseries - see README.md for skin usage
+- Don't pull extra fanart with episode fanart
+- Other ListItem cleanup
+- Remove SeriesArtworkGrabber command, no longer needed in Krypton
+
 v0.6.1 (2016-09-13)
 - Build proper path for extrafanart
 - extrafanart/thumbs can stay disabled if using new version of Artwork Beef

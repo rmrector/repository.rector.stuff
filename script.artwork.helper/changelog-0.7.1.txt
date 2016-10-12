@@ -1,3 +1,6 @@
+v0.7.1 (2016-10-12)
+- Fix behavior for video plugins
+
 v0.7.0 (2016-10-11)
 - Add paths for container and smartseries - see README.md for skin usage
 - Don't pull extra fanart with episode fanart

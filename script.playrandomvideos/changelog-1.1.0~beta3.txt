@@ -1,3 +1,11 @@
+v1.1.0~beta3 (2016-10-19)
+- Replace ugly error message when playing from non-permanent (auto-mounted, external,
+  removable) sources with a nice message suggesting to add the source (fixing the problem).
+- Add `singlevideo` option to RunScript
+- Fix certain special library paths in Krypton, like recently added movies
+- Rework the directory crawler
+- Integrate context item into script
+
 v1.1.0~beta2 (2016-08-06)
 - Fix error from datetime module
 - Fix error for local paths

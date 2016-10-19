@@ -50,7 +50,7 @@
 		<email />
 	</extension>
 </addon>
-<addon id="context.playrandomvideo" name="Play Random Videos" version="1.0.5" provider-name="rmrector">
+<addon id="context.playrandomvideo" name="Play Random Video" version="1.0.5" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
 		<import addon="xbmc.python" version="2.20.0" />

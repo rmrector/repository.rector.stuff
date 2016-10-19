@@ -63,6 +63,7 @@
 		</item>
 	</extension>
 	<extension point="kodi.addon.metadata">
+		<broken>Context menu has been merged into the script, a separate add-on is no longer needed.</broken>
 		<summary lang="en">Plays random videos from the selected list.</summary>
 		<description lang="en">Plays random videos from the selected list. It can play random episodes from TV shows, movies from genres/sets/years/tags, and videos from playlists, the filesystem, and just about anything else, other than plugins.</description>
 		<disclaimer lang="en" />

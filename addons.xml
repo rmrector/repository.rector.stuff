@@ -92,7 +92,7 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.7.0" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.8.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />

@@ -1,3 +1,13 @@
+v0.8.0 (2016-11-21)
+- Add season fanart from fanart.tv
+- Add button to remove extra artwork not enabled in add-on settings
+- Cleanup and avoid errors when adding artwork from files
+- Check existing URLs for problems
+- Retry failed items in at most 2 days not 2 months
+- Prefer English over other non-matching languages on non-English systems
+- Ignore some false alarm updates from Kodi that aren't new items
+- Other bug fixes
+
 v0.7.0 (2016-10-03)
 - Clean up series and artwork selection GUIs for Kodi 17 Krypton
 - Drop extra dependencies CacheControl and lockfile, use common plugin cache

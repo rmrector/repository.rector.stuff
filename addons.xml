@@ -196,7 +196,7 @@
 		<broken>No longer used nor supported for Kodi.</broken>
 	</extension>
 </addon>
-<addon id="script.playrandomvideos" name="Play Random Videos" version="1.1.0~beta3" provider-name="rmrector">
+<addon id="script.playrandomvideos" name="Play Random Videos" version="1.1.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
 		<import addon="xbmc.python" version="2.20.0" />

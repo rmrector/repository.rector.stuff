@@ -1,3 +1,7 @@
+v1.1.0 (2016-11-07)
+- Show notification if a directory can't be played
+- Show busy notification before playing first item, and option to disable it
+
 v1.1.0~beta3 (2016-10-19)
 - Replace ugly error message when playing from non-permanent (auto-mounted, external,
   removable) sources with a nice message suggesting to add the source (fixing the problem).
@@ -14,6 +18,7 @@ v1.1.0~beta1 (2016-07-30)
 - Rework for continuous play
 - deprecated script argument `forcewatchmode` for `watchmode`
 - remove script argument `limit`
+
 v1.0.3 (2016-02-23)
 - Fix issues on Android and Python 2.6
 v1.0.2 (2016-01-10)

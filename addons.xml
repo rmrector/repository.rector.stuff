@@ -261,7 +261,7 @@
 		<email />
 	</extension>
 </addon>
-	<addon id="service.tweak.lastplayed" name="Tweak last played time" version="0.5.2" provider-name="rmrector">
+	<addon id="service.tweak.lastplayed" name="Tweak last played time" version="0.5.3" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -270,6 +270,8 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">This service tweaks when the last played time for videos is updated to be more useful.</summary>
 		<description lang="en">This add-on changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
+		<news lang="en">v0.5.3 (2017-04-14)
+- Work around Kodi bug introduced in Krypton when playing movie from Home window</news>
 		<platform>all</platform>
 		<source>https://github.com/rmrector/service.tweak.lastplayed</source>
 		<forum>http://forum.kodi.tv/showthread.php?tid=253816</forum>

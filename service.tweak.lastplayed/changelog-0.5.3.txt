@@ -1,3 +1,7 @@
+v0.5.3 (2017-04-14)
++ Work around Kodi bug introduced in Krypton when playing from Home window
+- Move code from resources/lib to lib
+
 v0.5.2 (2016-02-23)
 - Fix issues on Android and Python 2.6
 v0.5.1 (2016-01-21)

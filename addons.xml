@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="context.artwork.downloader.auto" name="Add missing artwork" version="1.0.3" provider-name="rmrector">
+<addon id="context.artwork.downloader.auto" name="Add missing artwork (only for Isengard)" version="1.0.4" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
 		<import addon="xbmc.python" version="2.20.0" />
@@ -17,7 +17,7 @@
 		<description lang="en">Adds all missing artwork configured in Artwork Beef for the selected item. This item is added to the 'Manage...' sub-menu. It also supports Artwork Downloader with a setting.</description>
 		<source>https://github.com/rmrector/context.artwork.downloader.auto</source>
 		<license>The MIT License</license>
-		<disclaimer lang="en" />
+		<disclaimer lang="en">Artwork Beef only needs this for Isengard.</disclaimer>
 		<platform>all</platform>
 		<language />
 		<website />
@@ -25,7 +25,7 @@
 		<email />
 	</extension>
 </addon>
-<addon id="context.artwork.downloader.gui" name="Select artwork to add" version="1.0.3" provider-name="rmrector">
+<addon id="context.artwork.downloader.gui" name="Select artwork to add (only for Isengard)" version="1.0.4" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
 		<import addon="xbmc.python" version="2.20.0" />
@@ -42,7 +42,7 @@
 		<description lang="en">Shows the Artwork Beef GUI for the selected item, allowing you to choose the exact artwork you want to add. This item is added to the 'Manage...' context menu. It also supports Artwork Downloader with a setting.</description>
 		<source>https://github.com/rmrector/context.artwork.downloader.gui</source>
 		<license>The MIT License</license>
-		<disclaimer lang="en" />
+		<disclaimer lang="en">Artwork Beef only needs this for Isengard.</disclaimer>
 		<platform>all</platform>
 		<language />
 		<website />

@@ -18,13 +18,15 @@ options for building a list of images for a `multiimage` control.
 - [Source and development](https://github.com/rmrector/script.artwork.helper) on GitHub.
 - [Direct zip download](https://github.com/rmrector/repository.rector.stuff/raw/master/latest/script.artwork.helper-latest.zip) of the latest version.
 
-## Tweak last played time
-Changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.
+## Watched status toolbox
+Several tools to manage watched status and last played time. Includes context items "Mark as watched again",
+"Remove one watch count", and "Clear resume status", all under "Manage...", and a service that changes the
+last played time for videos to update only if at least a small portion has actually been played, hopefully
+improving the usefulness of lists and add-ons using this timestamp.
 
 - [Support and discussion thread](http://forum.kodi.tv/showthread.php?tid=2197255) on the Kodi forums.
 - [Source and development](https://github.com/rmrector/service.tweak.lastplayed) on GitHub.
 - [Direct zip download](https://github.com/rmrector/repository.rector.stuff/raw/master/latest/service.tweak.lastplayed-latest.zip) of the latest version.
-
 
 ## Play Random Videos
 Play random videos from any selected library node, playlist, or file directory. It is

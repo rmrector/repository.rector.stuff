@@ -50,32 +50,6 @@
 		<email />
 	</extension>
 </addon>
-<addon id="context.playrandomvideo" name="Play Random Video" version="1.0.5" provider-name="rmrector">
-	<requires>
-		<import addon="xbmc.addon" version="15.0.0" />
-		<import addon="xbmc.python" version="2.20.0" />
-		<import addon="script.playrandomvideos" version="1.0.0" />
-	</requires>
-	<extension point="kodi.context.item" library="context.py">
-		<item>
-			<label>$ADDON[script.playrandomvideos 32100]</label>
-			<visible>Window.IsVisible(videos) + !Container.Content(movies) + !Container.Content(episodes) + !SubString(ListItem.FolderPath, plugin, Left) + !SubString(ListItem.FolderPath, addons, Left) + !SubString(ListItem.FolderPath, sources, Left)</visible>
-		</item>
-	</extension>
-	<extension point="kodi.addon.metadata">
-		<broken>Context menu has been merged into the script, a separate add-on is no longer needed.</broken>
-		<summary lang="en">Plays random videos from the selected list.</summary>
-		<description lang="en">Plays random videos from the selected list. It can play random episodes from TV shows, movies from genres/sets/years/tags, and videos from playlists, the filesystem, and just about anything else, other than plugins.</description>
-		<disclaimer lang="en" />
-		<platform>all</platform>
-		<source>https://github.com/rmrector/context.playrandomvideo</source>
-		<forum>http://forum.kodi.tv/showthread.php?tid=238613</forum>
-		<license>The MIT License</license>
-		<language />
-		<website />
-		<email />
-  </extension>
-</addon>
 <addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -178,63 +152,6 @@ v0.9.0 (2017-01-27)
 		<email />
 	</extension>
 </addon>
-<addon id="script.module.cachecontrol" name="CacheControl" version="0.11.5-rector1" provider-name="Eric Larson, rmrector">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0" />
-    <import addon="script.module.lockfile" version="0.12.2" />
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Python Requests caching</summary>
-    <description>Packed for KODI from https://github.com/ionrock/cachecontrol. [CR]Has a fix merged in.</description>
-    <platform>all</platform>
-    <language />
-    <license>Apache 2</license>
-    <forum />
-    <website>http://cachecontrol.readthedocs.org/en/latest/</website>
-    <source>https://github.com/rmrector/script.module.cachecontrol</source>
-    <email />
-	<broken>No longer used nor supported for Kodi.</broken>
-  </extension>
-</addon>
-<addon id="script.module.devhelper" name="Development Helper" version="0.1.5" provider-name="rmrector">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="xbmc.json" version="6.20.0" />
-		<import addon="script.module.simplejson" version="3.3.0" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper for development.</summary>
-		<description lang="en">Provides some helpful bits.</description>
-		<source>https://github.com/rmrector/script.module.devhelper</source>
-		<license>The MIT License</license>
-		<platform>all</platform>
-		<disclaimer />
-		<language />
-		<website />
-		<forum />
-		<email />
-	</extension>
-</addon>
-<addon id="script.module.lockfile" name="lockfile" version="0.12.2" provider-name="Skip Montanaro, rmrector">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Python Requests caching</summary>
-		<description>Packed for KODI from http://git.openstack.org/cgit/openstack/pylockfile. [CR]Recently deprecated, but does what it needs to for now.</description>
-		<platform>all</platform>
-		<language />
-		<license>The MIT License</license>
-		<forum />
-		<website>http://docs.openstack.org/developer/pylockfile</website>
-		<source>https://github.com/rmrector/script.module.lockfile</source>
-		<email />
-		<broken>No longer used nor supported for Kodi.</broken>
-	</extension>
-</addon>
 <addon id="script.playrandomvideos" name="Play Random Videos" version="1.1.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="15.0.0" />
@@ -283,16 +200,36 @@ v0.9.0 (2017-01-27)
 		<email />
 	</extension>
 </addon>
-	<addon id="service.tweak.lastplayed" name="Tweak last played time" version="0.5.3" provider-name="rmrector">
+	<addon id="service.tweak.lastplayed" name="Watched status toolbox" version="0.6.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
 	</requires>
 	<extension point="xbmc.service" start="login" library="service.py" />
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.manage">
+			<item library="context.py">
+				<label>Mark as watched again</label>
+				<visible>!Skin.HasSetting(disablecontext:service.tweak.lastplayed) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)] + Integer.IsGreater(ListItem.PlayCount, 0)</visible>
+			</item>
+			<item library="context_remove.py">
+				<label>Remove one watch count</label>
+				<visible>!Skin.HasSetting(disablecontext:service.tweak.lastplayed) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)] + Integer.IsGreater(ListItem.PlayCount, 1)</visible>
+			</item>
+			<item library="context_clearresume.py">
+				<label>Clear resume status</label>
+				<visible>!Skin.HasSetting(disablecontext:service.tweak.lastplayed) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)] + ListItem.IsResumable</visible>
+			</item>
+		</menu>
+	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">This service tweaks when the last played time for videos is updated to be more useful.</summary>
-		<description lang="en">This add-on changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
-		<news lang="en">v0.5.3 (2017-04-14)
+		<summary lang="en">Several tools to manage watched status and last played time.</summary>
+		<description lang="en">Includes context items "Mark as watched again", "Remove one watch count", and "Clear resume status", all under "Manage...", and a service that changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
+		<news lang="en">
+v0.6.0 (2017-08-06)
+- Add context meu items, change name from "Tweak last played time"
+
+v0.5.3 (2017-04-14)
 - Work around Kodi bug introduced in Krypton when playing movie from Home window</news>
 		<platform>all</platform>
 		<source>https://github.com/rmrector/service.tweak.lastplayed</source>

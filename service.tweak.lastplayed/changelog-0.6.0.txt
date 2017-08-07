@@ -1,3 +1,7 @@
+v0.6.0 (2017-08-06)
+- Add context menu items, change name from "Tweak last played time"
+- Set update_after to 0 to disable last played tweaking
+
 v0.5.3 (2017-04-14)
 + Work around Kodi bug introduced in Krypton when playing from Home window
 - Move code from resources/lib to lib

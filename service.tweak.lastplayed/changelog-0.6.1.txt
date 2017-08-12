@@ -1,3 +1,6 @@
+v0.6.1 (2017-08-11)
+- Revert the shorter delay waiting for a library update, fixes the service often not properly updating lastplayed
+
 v0.6.0 (2017-08-06)
 - Add context menu items, change name from "Tweak last played time"
 - Set update_after to 0 to disable last played tweaking

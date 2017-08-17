@@ -1,3 +1,6 @@
+v0.6.2 (2017-08-16)
+- Load settings on start - fixes service being disabled on start
+
 v0.6.1 (2017-08-11)
 - Revert the shorter delay waiting for a library update, fixes the service often not properly updating lastplayed
 

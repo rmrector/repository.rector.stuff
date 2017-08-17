@@ -200,7 +200,7 @@ v0.9.0 (2017-01-27)
 		<email />
 	</extension>
 </addon>
-	<addon id="service.tweak.lastplayed" name="Watched status toolbox" version="0.6.1" provider-name="rmrector">
+	<addon id="service.tweak.lastplayed" name="Watched status toolbox" version="0.6.2" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.20.0"/>
 		<import addon="script.module.simplejson" version="3.3.0"/>
@@ -226,14 +226,15 @@ v0.9.0 (2017-01-27)
 		<summary lang="en">Several tools to manage watched status and last played time.</summary>
 		<description lang="en">Includes context items "Mark as watched again", "Remove one watch count", and "Clear resume status", all under "Manage...", and a service that changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
 		<news lang="en">
+v0.6.2 (2017-08-16)
+- Fix: service being disabled on start
+
 v0.6.1 (2017-08-11)
-- Revert the shorter delay waiting for a library update, fixes the service often not properly updating lastplayed
+- Fix: the service often not properly updating lastplayed
 
 v0.6.0 (2017-08-06)
-- Add context meu items, change name from "Tweak last played time"
-
-v0.5.3 (2017-04-14)
-- Work around Kodi bug introduced in Krypton when playing movie from Home window</news>
+- Feature: context meu items, change name from "Tweak last played time"
+		</news>
 		<platform>all</platform>
 		<source>https://github.com/rmrector/service.tweak.lastplayed</source>
 		<forum>http://forum.kodi.tv/showthread.php?tid=253816</forum>

@@ -1,3 +1,23 @@
+v0.11.0 (2017-09-02)
+- Feature: add temporary action to reset all movie set IDs
+- Cleanup: rearrange some Advanced add-on settings
+- Cleanup: only report Beef + Kodi version once per file per version pair
+
+v0.11.0~beta3 (2017-08-29)
+- Fix: Kodi library rebuild handling
+
+v0.11.0~beta2 (2017-08-28)
+- Feature: generate a report of all changed artwork
+- Feature: add option to prefer posters without a title
+- Fix: reset items' processed status when the Kodi library is rebuilt
+
+v0.11.0~beta1 (2017-08-22)
+- Feature: use HTTPS for all API and image URLs
+- Feature: add option to generate thumbnail from video files
+- Feature: add option to override image language (defaults to Kodi interface language)
+- Feature: add option to remove all artwork for specific types of media
+- Fix: a few Leia compatibility changes
+
 v0.10.2 (2017-07-25)
 - Feature: don't repeatedly request artwork from an unavailable web service
 - Fix: don't remove animated artwork set by other add-ons

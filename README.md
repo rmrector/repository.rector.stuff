@@ -16,7 +16,8 @@ Artwork Beef automatically adds extra artwork for TV shows and movies into your 
 options for building a list of images for a `multiimage` control.
 
 - [Source and development](https://github.com/rmrector/script.artwork.helper) on GitHub.
-- [Direct zip download](https://github.com/rmrector/repository.rector.stuff/raw/master/latest/script.artwork.helper-latest.zip) of the latest version.
+- [Direct zip download](https://github.com/rmrector/repository.rector.stuff/raw/master/latest/script.artwork.helper-latest.zip) of the latest version for Kodi 17 and above.
+- [Direct zip download](https://github.com/rmrector/repository.rector.stuff/raw/master/latest/script.artwork.helper-jarvis-latest.zip) of the latest version for Kodi 16 and below.
 
 ## Watched status toolbox
 Several tools to manage watched status and last played time. Includes context items "Mark as watched again",

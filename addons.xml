@@ -115,6 +115,31 @@ v0.12.0 (2017-11-03)
 		<email />
 	</extension>
 </addon>
+<addon id="script.artwork.helper" name="Artwork Helper" version="0.8.0" provider-name="rrector">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="xbmc.json" version="6.20.0" />
+		<import addon="xbmc.addon" version="17.0.0" />
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Artwork Helper provides a couple of tools to skins and other add-ons for working with artwork.</summary>
+		<description lang="en">Artwork Helper provides a couple of tools to skins and other add-ons for working with artwork. See README.md for detailed usage.</description>
+		<disclaimer lang="en">Artwork Helper does not directly add functionality on its own and must be supported by skins or other add-ons.</disclaimer>
+		<source>https://github.com/rmrector/script.artwork.helper</source>
+		<forum>https://forum.kodi.tv/showthread.php?tid=236649</forum>
+		<news>
+v0.8.0 (2017-11-08)
+- Update for Leia compatibility, Krypton is now lowest supported
+- remove `shuffle`
+		</news>
+		<license>The MIT License</license>
+		<platform>all</platform>
+		<language />
+		<website />
+		<email />
+	</extension>
+</addon>
 <addon id="script.artwork.helper" name="Artwork Helper" version="0.7.1" provider-name="rrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />

@@ -1,3 +1,13 @@
+v1.2.0 (2017-11-13)
+- Feature: merge in 'Play one random' context item
+- Feature: option for continuous play
+- Feature: option to play from all videos if no (un)watched videos available as configured
+- Feature: option to exclude TV show extras from random selection
+- Fix: Leia compatibility for context items
+
+v1.1.2 (2017-04-28)
+- Fix incorrect JSON-RPC notifications on Krypton
+
 v1.1.0 (2016-11-07)
 - Show notification if a directory can't be played
 - Show busy notification before playing first item, and option to disable it

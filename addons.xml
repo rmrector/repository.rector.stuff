@@ -66,7 +66,7 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.13.0" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.14.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -78,14 +78,24 @@
 		<provides>executable</provides>
 	</extension>
 	<extension point="kodi.context.item">
-		<menu id="kodi.core.manage">
+		<menu id="kodi.core.main">
+			<menu id="kodi.core.manage">
+				<item library="context.py">
+					<label>32410</label>
+					<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+				</item>
+				<item library="context_gui.py">
+					<label>32411</label>
+					<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+				</item>
+			</menu>
 			<item library="context.py">
 				<label>32410</label>
-				<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+				<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [String.StartsWith(System.BuildVersion,18) | String.StartsWith(System.BuildVersion,19)] + [String.IsEqual(ListItem.DBTYPE, artist) | String.IsEqual(ListItem.DBTYPE, album) | String.IsEqual(ListItem.DBTYPE, song)]</visible>
 			</item>
 			<item library="context_gui.py">
 				<label>32411</label>
-				<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+				<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [String.StartsWith(System.BuildVersion,18) | String.StartsWith(System.BuildVersion,19)] + [String.IsEqual(ListItem.DBTYPE, artist) | String.IsEqual(ListItem.DBTYPE, album) | String.IsEqual(ListItem.DBTYPE, song)]</visible>
 			</item>
 		</menu>
 	</extension>
@@ -95,6 +105,12 @@
 		<description lang="en">Artwork Beef automatically adds extra artwork for TV shows and movies into your library. It grabs them from wonderful web services and the file system.</description>
 		<disclaimer lang="en">Artwork sources: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB</disclaimer>
 		<news>
+v0.14.0 (2018-01-02)
+- Feature: music library support (for latest Leia nightlies only)
+- Fix: crash when processing music video without an artist
+- Fix: don't create movie set central directory unless there is artwork to download
+- Fix: crash on Jarvis when building UA
+
 v0.13.0 (2017-12-27)
 - Feature: add option to download artwork
 - Feature: add options to change the in progress display

@@ -66,7 +66,7 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.15.0" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.15.1" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -105,6 +105,9 @@
 		<description lang="en">Artwork Beef automatically adds extra artwork for TV shows and movies into your library. It grabs them from wonderful web services and the file system.</description>
 		<disclaimer lang="en">Artwork sources: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB</disclaimer>
 		<news>
+v0.15.1 (2018-01-11)
+- Fix: incorrect names for all artwork when 'extrafanart' enabled
+
 v0.15.0 (2018-01-09)
 - Feature: add option to save additional fanart to 'extrafanart' directory rather than matching Kodi export names
 - Feature: remove deselected local artwork, add option to recycle changed local artwork

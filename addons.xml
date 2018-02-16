@@ -280,4 +280,21 @@ v0.6.0 (2017-08-06)
 		<email />
 	</extension>
 </addon>
+<addon id="webinterface.devhelper" version="0.1.0" name="Devhelper web" provider-name="Ryan Rector">
+	<requires>
+		<import addon="xbmc.json" version="6.0.0"/>
+	</requires>
+	<extension point="xbmc.webinterface"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Development web interface</summary>
+		<description lang="en">A web interface to help with design and development.</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart></fanart>
+			<screenshot>resources/screenshot1.png</screenshot>
+			<screenshot>resources/screenshot2.png</screenshot>
+		</assets>
+	</extension>
+</addon>
 </addons>

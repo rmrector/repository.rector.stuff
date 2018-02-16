@@ -280,7 +280,7 @@ v0.6.0 (2017-08-06)
 		<email />
 	</extension>
 </addon>
-<addon id="webinterface.devhelper" version="0.1.0" name="Devhelper web" provider-name="Ryan Rector">
+<addon id="webinterface.devhelper" version="0.1.1" name="Devhelper web" provider-name="Ryan Rector">
 	<requires>
 		<import addon="xbmc.json" version="6.0.0"/>
 	</requires>

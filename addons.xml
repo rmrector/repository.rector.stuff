@@ -133,7 +133,7 @@ v0.18.0 (2018-03-08)
 		<email />
 	</extension>
 </addon>
-<addon id="script.artwork.helper" name="Artwork Helper" version="0.8.0" provider-name="rrector">
+<addon id="script.artwork.helper" name="Artwork Helper" version="0.9.0" provider-name="rrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -147,6 +147,10 @@ v0.18.0 (2018-03-08)
 		<source>https://github.com/rmrector/script.artwork.helper</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=236649</forum>
 		<news>
+v0.9.0 (2018-03-25)
+- Feature: add a path to grab artwork work the currently playing item
+- Feature: add path option to grab artwork from multiple artists
+
 v0.8.0 (2017-11-08)
 - Update for Leia compatibility, Krypton is now lowest supported
 - remove `shuffle`

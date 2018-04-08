@@ -289,7 +289,7 @@ v0.6.0 (2017-08-06)
 		<email />
 	</extension>
 </addon>
-<addon id="webinterface.devhelper" version="0.1.2" name="Devhelper web" provider-name="Ryan Rector">
+<addon id="webinterface.devhelper" version="0.1.3" name="Devhelper web" provider-name="Ryan Rector">
 	<requires>
 		<import addon="xbmc.json" version="6.0.0"/>
 	</requires>
@@ -298,6 +298,9 @@ v0.6.0 (2017-08-06)
 		<summary lang="en">Development web interface</summary>
 		<description lang="en">A web interface to help with design and development.</description>
 		<news>
+v0.1.3 (2018-04-08)
+- Fix: running data on specifically sized requests
+
 v0.1.2 (2018-03-12)
 - Feature: add an option to show all art types available in the Kodi library in Running Data
 - Feature: add a couple of smaller functionality switches
@@ -306,8 +309,8 @@ v0.1.2 (2018-03-12)
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>
-			<screenshot>resources/screenshot1.png</screenshot>
-			<screenshot>resources/screenshot2.png</screenshot>
+			<screenshot>resources/screenshot1.jpg</screenshot>
+			<screenshot>resources/screenshot2.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>

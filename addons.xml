@@ -66,7 +66,7 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.18.4" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.18.5" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -105,6 +105,11 @@
 		<description lang="en">Artwork Beef automatically adds extra artwork for TV shows and movies into your library. It grabs them from wonderful web services and the file system.</description>
 		<disclaimer lang="en">Artwork sources: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB</disclaimer>
 		<news>
+v0.18.5 (2018-04-09)
+- Fix: opening report in GUI on Android
+- Fix: rearrange file deletion further
+- Fix: find local artwork for albums split by disc
+
 v0.18.4 (2018-03-24)
 - Fix: missing artwork from fanart.tv for the music library
 

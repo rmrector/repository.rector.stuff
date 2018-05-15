@@ -66,7 +66,7 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.18.5" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.19.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -81,20 +81,20 @@
 		<menu id="kodi.core.main">
 			<menu id="kodi.core.manage">
 				<item library="context.py">
-					<label>32410</label>
+					<label>AB: $ADDON[script.artwork.beef 32410]</label>
 					<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
 				</item>
 				<item library="context_gui.py">
-					<label>32411</label>
+					<label>AB: $ADDON[script.artwork.beef 32411]</label>
 					<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
 				</item>
 			</menu>
 			<item library="context.py">
-				<label>32410</label>
+				<label>AB: $ADDON[script.artwork.beef 32410]</label>
 				<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [String.StartsWith(System.BuildVersion,18) | String.StartsWith(System.BuildVersion,19)] + [String.IsEqual(ListItem.DBTYPE, artist) | String.IsEqual(ListItem.DBTYPE, album) | String.IsEqual(ListItem.DBTYPE, song)]</visible>
 			</item>
 			<item library="context_gui.py">
-				<label>32411</label>
+				<label>AB: $ADDON[script.artwork.beef 32411]</label>
 				<visible>!Skin.HasSetting(disablecontext:script.artwork.beef) + [String.StartsWith(System.BuildVersion,18) | String.StartsWith(System.BuildVersion,19)] + [String.IsEqual(ListItem.DBTYPE, artist) | String.IsEqual(ListItem.DBTYPE, album) | String.IsEqual(ListItem.DBTYPE, song)]</visible>
 			</item>
 		</menu>
@@ -105,26 +105,18 @@
 		<description lang="en">Artwork Beef automatically adds extra artwork for TV shows and movies into your library. It grabs them from wonderful web services and the file system.</description>
 		<disclaimer lang="en">Artwork sources: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB</disclaimer>
 		<news>
-v0.18.5 (2018-04-09)
-- Fix: opening report in GUI on Android
-- Fix: rearrange file deletion further
-- Fix: find local artwork for albums split by disc
+v0.19.0 (2018-05-14)
+- Feature: whitelist artwork from file system
+- Feature: add option to preload local images to Kodi's texture cache
+- Cleanup: add "AB: " to the context menu items
 
-v0.18.4 (2018-03-24)
-- Fix: missing artwork from fanart.tv for the music library
-
-v0.18.3 (2018-03-23)
-- Fix: show "missing web service ID" message when appropriate
-
-v0.18.1-2
-- Fix: auto download music 'landscape' image
-- Fix: "Stop current process" not working in some configurations
-- Fix: downloading video artwork when the settings should be disabled
-
-v0.18.0 (2018-03-08)
+v0.18.0-5
 - Feature: save and load local artwork for items in the music library
 - Feature: separate artwork downloading options by media type
 - Fix: arrange and reword some settings for safety and clarity
+- Fix: "Stop current process" not working in some configurations
+- Fix: opening report in GUI on Android
+- Fix: rearrange file deletion further
 		</news>
 		<source>https://github.com/rmrector/script.artwork.beef</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=258886</forum>

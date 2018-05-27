@@ -292,7 +292,7 @@ v0.6.0 (2017-08-06)
 		<email />
 	</extension>
 </addon>
-<addon id="webinterface.devhelper" version="0.1.3" name="Devhelper web" provider-name="Ryan Rector">
+<addon id="webinterface.devhelper" version="0.1.4" name="Devhelper web" provider-name="Ryan Rector">
 	<requires>
 		<import addon="xbmc.json" version="6.0.0"/>
 	</requires>
@@ -301,6 +301,11 @@ v0.6.0 (2017-08-06)
 		<summary lang="en">Development web interface</summary>
 		<description lang="en">A web interface to help with design and development.</description>
 		<news>
+v0.1.4 (2018-05-26)
+- Feature: param toggler for "filter" params
+- Feature: syntax highlighting for JSON-RPC results
+- Fix: show full JSON-RPC response
+
 v0.1.3 (2018-04-08)
 - Fix: running data on specifically sized requests
 

@@ -1,3 +1,6 @@
+v0.6.4 (2018-06-22)
+- Fix: rework loop, improve behavior on Krypton and Leia
+
 v0.6.3 (2017-09-14)
 - Fix: also restore previous resume point when rolling back last played time
 - Refine the Krypton bug workaround

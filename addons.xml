@@ -284,7 +284,7 @@ v0.6.4 (2018-06-22)
 		<email />
 	</extension>
 </addon>
-<addon id="webinterface.devhelper" version="0.1.4" name="Devhelper web" provider-name="Ryan Rector">
+<addon id="webinterface.devhelper" version="0.2.0" name="Devhelper web" provider-name="Ryan Rector">
 	<requires>
 		<import addon="xbmc.json" version="6.0.0"/>
 	</requires>
@@ -293,6 +293,12 @@ v0.6.4 (2018-06-22)
 		<summary lang="en">Development web interface</summary>
 		<description lang="en">A web interface to help with design and development.</description>
 		<news>
+v0.2.0 (2018-09-13)
+- Feature: settings to add or change additional script windows shown in "Visible windows"
+- Feature: settings to configure artwork types shown in Video and Music art
+- Feature: add settings to toggle JSON syntax highlighting
+- Feature: add a 5 second delay option to Running Data
+
 v0.1.4 (2018-05-26)
 - Feature: param toggler for "filter" params
 - Feature: syntax highlighting for JSON-RPC results

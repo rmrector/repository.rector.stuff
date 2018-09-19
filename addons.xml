@@ -295,7 +295,7 @@ v0.6.4 (2018-06-22)
 		<email />
 	</extension>
 </addon>
-<addon id="webinterface.devhelper" version="0.2.0" name="Devhelper web" provider-name="Ryan Rector">
+<addon id="webinterface.devhelper" version="0.2.1" name="Devhelper web" provider-name="Ryan Rector">
 	<requires>
 		<import addon="xbmc.json" version="6.0.0"/>
 	</requires>
@@ -304,25 +304,17 @@ v0.6.4 (2018-06-22)
 		<summary lang="en">Development web interface</summary>
 		<description lang="en">A web interface to help with design and development.</description>
 		<news>
+v0.2.1 (2018-09-17)
+- Fix: too long "running data" requests for websockets, again
+
 v0.2.0 (2018-09-13)
 - Feature: settings to add or change additional script windows shown in "Visible windows"
 - Feature: settings to configure artwork types shown in Video and Music art
 - Feature: add settings to toggle JSON syntax highlighting
 - Feature: add a 5 second delay option to Running Data
-
-v0.1.4 (2018-05-26)
-- Feature: param toggler for "filter" params
-- Feature: syntax highlighting for JSON-RPC results
-- Fix: show full JSON-RPC response
-
-v0.1.3 (2018-04-08)
-- Fix: running data on specifically sized requests
-
-v0.1.2 (2018-03-12)
-- Feature: add an option to show all art types available in the Kodi library in Running Data
-- Feature: add a couple of smaller functionality switches
 		</news>
 		<platform>all</platform>
+		<source>https://github.com/rmrector/webinterface.devhelper</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart></fanart>

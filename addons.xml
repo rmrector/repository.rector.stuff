@@ -66,7 +66,7 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.23.1" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.23.2" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -90,7 +90,7 @@
 				</item>
 				<item library="context_debug_remove.py">
 					<label>AB: $ADDON[script.artwork.beef 32427]</label>
-					<visible>Skin.HasSetting(enablecontext:script.artwork.beef.debug) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+					<visible>Skin.HasSetting(enablecontext:script.artwork.beef.debug) + [StringCompare(ListItem.DBTYPE, movie) | StringCompare(ListItem.DBTYPE, set) | StringCompare(ListItem.DBTYPE, tvshow) | StringCompare(ListItem.DBTYPE, episode) | StringCompare(ListItem.DBTYPE, musicvideo) | StringCompare(ListItem.DBTYPE, season) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo) | StringCompare(ListItem.DBTYPE, season)]</visible>
 				</item>
 				<item library="context_debug_logitem.py">
 					<label>AB: $ADDON[script.artwork.beef 32430]</label>
@@ -124,6 +124,10 @@
 		<description lang="es">Artwork Beef agrega automáticamente ilustraciones adicionales para Series TV y Películas a su biblioteca. Las ilustraciones son agregadas desde Servicios web y el Sistema de archivos local.</description>
 		<disclaimer lang="es">Fuente para ilustraciones: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB</disclaimer>
 		<news>
+v0.23.2 (2019-03-11)
+- Fix: limit image downloads on consistent web service errors
+- Fix: don't hide "extrafanart" folder settings
+
 v0.23.1 (2018-12-02)
 - Fix: Remove generated thumb from Kodi texture cache when removing art
 - Fix: show actual message for "remote control" is required to pre-cache artwork

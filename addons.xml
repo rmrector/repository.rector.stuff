@@ -120,8 +120,8 @@
 		<summary lang="en">Automatically adds extra artwork for your media.</summary>
 		<description lang="en">Artwork Beef automatically adds extra artwork for TV shows and movies into your library. It grabs them from wonderful web services and the file system.</description>
 		<disclaimer lang="en">Artwork sources: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB</disclaimer>
-		<summary lang="es">Agrega automáticamente ilustraciones adicionales para sus medios.</summary>
-		<description lang="es">Artwork Beef agrega automáticamente ilustraciones adicionales para Series TV y Películas a su biblioteca. Las ilustraciones son agregadas desde Servicios web y el Sistema de archivos local.</description>
+		<summary lang="es">Agrega automÃ¡ticamente ilustraciones adicionales para sus medios.</summary>
+		<description lang="es">Artwork Beef agrega automÃ¡ticamente ilustraciones adicionales para Series TV y PelÃ­culas a su biblioteca. Las ilustraciones son agregadas desde Servicios web y el Sistema de archivos local.</description>
 		<disclaimer lang="es">Fuente para ilustraciones: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB</disclaimer>
 		<news>
 v0.23.4 (2019-05-05)
@@ -147,13 +147,13 @@ v0.23.0-3 (2018-11-17 -- 2019-03-20)
 		<email />
 	</extension>
 </addon>
-<addon id="script.artwork.helper" name="Artwork Helper" version="0.9.0" provider-name="rrector">
+<addon id="script.artwork.helper" name="Artwork Helper" version="0.9.1" provider-name="rrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
 		<import addon="xbmc.addon" version="17.0.0" />
 	</requires>
-	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.python.library" library="python/default.py" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Artwork Helper provides a couple of tools to skins and other add-ons for working with artwork.</summary>
 		<description lang="en">Artwork Helper provides a couple of tools to skins and other add-ons for working with artwork. See README.md for detailed usage.</description>
@@ -161,8 +161,12 @@ v0.23.0-3 (2018-11-17 -- 2019-03-20)
 		<source>https://github.com/rmrector/script.artwork.helper</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=236649</forum>
 		<news>
+v0.9.1 (2019-06-15)
+- Fix: add an image mime type so Kodi identifies image URLs without extensions
+- Fix: Kodi v19 Pyton 3 compatibility
+
 v0.9.0 (2018-03-25)
-- Feature: add a path to grab artwork work the currently playing item
+- Feature: add a path to grab artwork from the currently playing item
 - Feature: add path option to grab artwork from multiple artists
 
 v0.8.0 (2017-11-08)
@@ -174,6 +178,7 @@ v0.8.0 (2017-11-08)
 		<language />
 		<website />
 		<email />
+		<assets />
 	</extension>
 </addon>
 <addon id="script.artwork.helper" name="Artwork Helper" version="0.7.1" provider-name="rrector">

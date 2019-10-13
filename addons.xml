@@ -66,7 +66,7 @@
 		<disclaimer />
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.26.2" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.27.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -124,13 +124,10 @@
 		<description lang="es">Artwork Beef agrega automÃ¡ticamente ilustraciones adicionales para Series TV y PelÃ­culas a su biblioteca. Las ilustraciones son agregadas desde Servicios web y el Sistema de archivos local.</description>
 		<disclaimer lang="es">Fuente para ilustraciones: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB, KyraDB</disclaimer>
 		<news>
-v0.26.2 (2019-09-14)
-- Fix: identifying local movie set artwork
+v0.27.0 (2019-10-13)
+- Feature: sort KyraDB results by 'likes'
 
-v0.26.1 (2019-09-07)
-- Fix: automated settings for movie animated art and characterart
-
-v0.26.0 (2019-08-11)
+v0.26.0-2 (2019-08-11 - 2019-09-14)
 - Feature: add settings to enable / disable each web service individually
 - Fix: require both keys from users for KyraDB
 - Fix: error with Jarvis / old urllib3

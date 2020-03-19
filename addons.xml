@@ -369,7 +369,7 @@ v0.6.4 (2018-06-22)
 		<email />
 	</extension>
 </addon>
-<addon id="webinterface.devhelper" version="0.2.1" name="Devhelper web" provider-name="Ryan Rector">
+<addon id="webinterface.devhelper" version="0.3.0" name="Devhelper web" provider-name="Ryan Rector">
 	<requires>
 		<import addon="xbmc.json" version="6.0.0"/>
 	</requires>
@@ -377,7 +377,9 @@ v0.6.4 (2018-06-22)
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Development web interface</summary>
 		<description lang="en">A web interface to help with design and development.</description>
-		<news>
+		<news>v0.3.0 (2020-03-18)
+- Fix: bits
+
 v0.2.1 (2018-09-17)
 - Fix: too long "running data" requests for websockets, again
 
@@ -391,7 +393,6 @@ v0.2.0 (2018-09-13)
 		<source>https://github.com/rmrector/webinterface.devhelper</source>
 		<assets>
 			<icon>icon.png</icon>
-			<fanart></fanart>
 			<screenshot>resources/screenshot1.jpg</screenshot>
 			<screenshot>resources/screenshot2.jpg</screenshot>
 		</assets>

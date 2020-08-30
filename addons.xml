@@ -197,41 +197,6 @@ v0.8.0 (2017-11-08)
 		<email />
 	</extension>
 </addon>
-<addon id="script.playrandomvideos" name="Play Random Videos" version="2.0.0~adev" provider-name="rmrector">
-	<requires>
-		<import addon="xbmc.addon" version="18.9.0" />
-		<import addon="xbmc.python" version="3.0.0" />
-	</requires>
-	<extension point="kodi.context.item">
-		<menu id="kodi.core.main">
-			<item library="python/context.py">
-				<label>32100</label>
-				<visible>!Skin.HasSetting(disablecontext:script.playrandomvideos) + [Window.IsVisible(videos) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, season)] + ListItem.IsFolder + !ListItem.IsParentFolder + ![String.StartsWith(ListItem.FolderPath, plugin) | String.StartsWith(ListItem.FolderPath, addons) | String.StartsWith(ListItem.FolderPath, sources)] + !String.IsEqual(ListItem.FolderPath, add)</visible>
-			</item>
-			<item library="python/context_single.py">
-				<label>32099</label>
-				<visible>Skin.HasSetting(enablecontext:script.playrandomvideos.single) + [Window.IsVisible(videos) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, season)] + ListItem.IsFolder + !ListItem.IsParentFolder + ![String.StartsWith(ListItem.FolderPath, plugin) | String.StartsWith(ListItem.FolderPath, addons) | String.StartsWith(ListItem.FolderPath, sources)] + !String.IsEqual(ListItem.FolderPath, add)</visible>
-			</item>
-		</menu>
-	</extension>
-	<extension point="xbmc.python.library" library="python/script.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Plays random videos from all sorts of lists.</summary>
-		<description lang="en">This add-on can quickly play random episodes from TV shows, movies from genres/sets/years/tags, and videos from playlists, the filesystem, and just about anything else, other than plugins.</description>
-		<news>
-v2.0.0 (??)
-- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.
-		</news>
-		<platform>all</platform>
-		<source>https://github.com/rmrector/script.playrandomvideos</source>
-		<forum>https://forum.kodi.tv/showthread.php?tid=238613</forum>
-		<license>The MIT License</license>
-		<disclaimer />
-		<language />
-		<website />
-		<email />
-	</extension>
-</addon>
 <addon id="script.playrandomvideos" name="Play Random Videos" version="1.2.1" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="16.0.0" />
@@ -285,43 +250,6 @@ v2.0.0 (??)
 		<forum>http://forum.kodi.tv/showthread.php?tid=254004</forum>
 		<license>The MIT License</license>
 		<platform>all</platform>
-		<website />
-		<language />
-		<email />
-	</extension>
-</addon>
-	<addon id="service.tweak.lastplayed" name="Watched status toolbox" version="1.0.0~rc1" provider-name="rmrector">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.service" start="login" library="service.py" />
-	<extension point="kodi.context.item">
-		<menu id="kodi.core.manage">
-			<item library="context.py">
-				<label>Mark as watched again</label>
-				<visible>!Skin.HasSetting(disablecontext:service.tweak.lastplayed) + [String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)] + Integer.IsGreater(ListItem.PlayCount, 0)</visible>
-			</item>
-			<item library="context_remove.py">
-				<label>Remove one watch count</label>
-				<visible>!Skin.HasSetting(disablecontext:service.tweak.lastplayed) + [String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)] + Integer.IsGreater(ListItem.PlayCount, 1)</visible>
-			</item>
-		</menu>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Several tools to manage watched status and last played time.</summary>
-		<description lang="en">Includes context items "Mark as watched again" and "Remove one watch count" under "Manage...", and a service that changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
-		<news lang="en">
-v1.0.0~rc1 (2020-02-09)
-- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.
-		</news>
-		<platform>all</platform>
-		<source>https://github.com/rmrector/service.tweak.lastplayed</source>
-		<forum>https://forum.kodi.tv/showthread.php?tid=253816</forum>
-		<license>The MIT License</license>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-		<disclaimer />
 		<website />
 		<language />
 		<email />

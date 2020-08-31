@@ -50,20 +50,23 @@
 		<email />
 	</extension>
 </addon>
-<addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.0" provider-name="rmrector">
+<addon id="repository.rector.stuff" name="Rector Stuff (old Python 2 for Kodi 15 - 18)" version="1.0.1" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
 	<extension point="xbmc.addon.repository" name="Rector Repository">
-		<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/master/</datadir>
+		<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">A little place for my stuff.</summary>
 		<description lang="en">I'm Rector, I do stuff, I put it here.</description>
 		<platform>all</platform>
 		<disclaimer />
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 	</extension>
 </addon>
 <addon id="script.artwork.beef" name="Artwork Beef" version="0.28.2" provider-name="rmrector">

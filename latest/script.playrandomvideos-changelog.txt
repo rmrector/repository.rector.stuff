@@ -1,3 +1,6 @@
+v2.0.0 (??)
+- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.
+
 v1.2.1 (2018-06-22)
 - Fix: error when playing some videos from file system
 - Fix: support busy dialog changes in Kodi Leia

@@ -50,7 +50,7 @@
 		<email />
 	</extension>
 </addon>
-<addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.2" provider-name="rmrector">
+<addon id="repository.rector.stuff" name="Rector Stuff" version="1.0.3" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
@@ -63,7 +63,7 @@
 		<dir minversion="19.0.0">
 			<info>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python2/</datadir>
+			<datadir zip="true">https://raw.githubusercontent.com/rmrector/repository.rector.stuff/python3/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -76,7 +76,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.artwork.beef" name="Artwork Beef" version="0.28.2" provider-name="rmrector">
+<addon id="script.artwork.beef" name="Artwork Beef" version="0.28.3" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -134,6 +134,10 @@
 		<description lang="es">Artwork Beef agrega automáticamente ilustraciones adicionales para Series TV y Películas a su biblioteca. Las ilustraciones son agregadas desde Servicios web y el Sistema de archivos local.</description>
 		<disclaimer lang="es">Fuente para ilustraciones: fanart.tv, TheTVDB.com, The Movie Database, TheAudioDB, KyraDB</disclaimer>
 		<news>
+v0.28.3 (2020-10-21)
+- fix: treat 403 as 404 and replace it
+- fix: don't throw an error when a movie set is lost
+
 v0.28.2 (2020-08-09)
 - Fix: avoid adding duplicate fanart from TVDB
 - Fix: log full URL when download fails

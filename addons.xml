@@ -26,7 +26,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.artwork.dump" name="Artwork Dump" version="0.1.0" provider-name="rmrector">
+<addon id="script.artwork.dump" name="Artwork Dump" version="0.1.1" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="xbmc.json" version="6.20.0" />

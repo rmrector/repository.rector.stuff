@@ -26,6 +26,38 @@
 		</assets>
 	</extension>
 </addon>
+<addon id="script.artwork.dump" name="Artwork Dump" version="0.1.0" provider-name="rmrector">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="xbmc.json" version="6.20.0" />
+		<import addon="script.module.requests" version="2.9.1" />
+	</requires>
+	<extension point="xbmc.python.script" library="python/default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="python/context.py">
+				<label>AD: $ADDON[script.artwork.dump 32410]</label>
+				<visible>!Skin.HasSetting(disablecontext:script.artwork.dump) + [String.IsEqual(ListItem.DBTYPE, artist) | String.IsEqual(ListItem.DBTYPE, album) | String.IsEqual(ListItem.DBTYPE, song) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="xbmc.service" library="python/service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_gb">Automatically download artwork for your media.</summary>
+		<description lang="en_gb">Artwork Dump automatically downloads artwork for media in your video and music libraries into your media file system. It only downloads artwork already added to your libraries.</description>
+		<news>
+		</news>
+		<source>https://github.com/rmrector/script.artwork.dump</source>
+		<forum>https://forum.kodi.tv/showthread.php?tid=258886</forum>
+		<license>The MIT License</license>
+		<platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+	</extension>
+</addon>
 <addon id="script.playrandomvideos" name="Play Random Videos" version="2.0.0~adev" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.addon" version="18.9.0" />

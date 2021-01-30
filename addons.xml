@@ -65,9 +65,8 @@ v0.1.2 (2020-12-12)
 		</assets>
 	</extension>
 </addon>
-<addon id="script.playrandomvideos" name="Play Random Videos" version="2.0.0~adev" provider-name="rmrector">
+<addon id="script.playrandomvideos" name="Play Random Videos" version="2.0.0" provider-name="rmrector">
 	<requires>
-		<import addon="xbmc.addon" version="18.9.0" />
 		<import addon="xbmc.python" version="3.0.0" />
 	</requires>
 	<extension point="kodi.context.item">
@@ -84,16 +83,17 @@ v0.1.2 (2020-12-12)
 	</extension>
 	<extension point="xbmc.python.library" library="python/script.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Plays random videos from all sorts of lists.</summary>
-		<description lang="en">This add-on can quickly play random episodes from TV shows, movies from genres/sets/years/tags, and videos from playlists, the filesystem, and just about anything else, other than plugins.</description>
-		<news>
-v2.0.0 (??)
-- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.
-		</news>
+		<summary lang="en_gb">Plays random videos from all sorts of lists.</summary>
+		<description lang="en_gb">This add-on can quickly play random episodes from TV shows, movies from genres/sets/years/tags, and videos from playlists, the filesystem, and just about anything else, other than plugins.</description>
+		<news>v2.0.0 (2021-01-29)
+- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.</news>
 		<platform>all</platform>
 		<source>https://github.com/rmrector/script.playrandomvideos</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=238613</forum>
 		<license>The MIT License</license>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
 		<disclaimer />
 		<language />
 		<website />

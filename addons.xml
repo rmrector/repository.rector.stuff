@@ -100,30 +100,28 @@ v2.0.0 (??)
 		<email />
 	</extension>
 </addon>
-	<addon id="service.tweak.lastplayed" name="Watched status toolbox" version="1.0.0~rc1" provider-name="rmrector">
+	<addon id="service.tweak.lastplayed" name="Watched status toolbox" version="1.0.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 	</requires>
-	<extension point="xbmc.service" start="login" library="service.py" />
+	<extension point="xbmc.service" start="login" library="python/service.py" />
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.manage">
-			<item library="context.py">
+			<item library="python/context.py">
 				<label>Mark as watched again</label>
 				<visible>!Skin.HasSetting(disablecontext:service.tweak.lastplayed) + [String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)] + Integer.IsGreater(ListItem.PlayCount, 0)</visible>
 			</item>
-			<item library="context_remove.py">
+			<item library="python/context_remove.py">
 				<label>Remove one watch count</label>
 				<visible>!Skin.HasSetting(disablecontext:service.tweak.lastplayed) + [String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)] + Integer.IsGreater(ListItem.PlayCount, 1)</visible>
 			</item>
 		</menu>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Several tools to manage watched status and last played time.</summary>
-		<description lang="en">Includes context items "Mark as watched again" and "Remove one watch count" under "Manage...", and a service that changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
-		<news lang="en">
-v1.0.0~rc1 (2020-02-09)
-- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.
-		</news>
+		<summary lang="en_gb">Several tools to manage watched status and last played time.</summary>
+		<description lang="en_gb">Includes context items "Mark as watched again" and "Remove one watch count" under "Manage...", and a service that changes the last played time for videos to update only if at least a small portion has actually been played, hopefully improving the usefulness of lists and add-ons using this timestamp.</description>
+		<news>v1.0.0 (2021-01-29)
+- Kodi 19 Matrix / Python 3 compatibility. Breaks compatibility with previous versions of Kodi.</news>
 		<platform>all</platform>
 		<source>https://github.com/rmrector/service.tweak.lastplayed</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=253816</forum>

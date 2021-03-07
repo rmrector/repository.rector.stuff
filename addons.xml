@@ -26,7 +26,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.artwork.dump" name="Artwork Dump" version="0.1.3" provider-name="rmrector">
+<addon id="script.artwork.dump" name="Artwork Dump" version="0.2.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -37,25 +37,26 @@
 	</extension>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
+			<menu id="kodi.core.manage">
+				<item library="python/context.py">
+					<label>AD: $ADDON[script.artwork.dump 32410]</label>
+					<visible>!Skin.HasSetting(disablecontext:script.artwork.dump) + [String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+				</item>
+			</menu>
 			<item library="python/context.py">
 				<label>AD: $ADDON[script.artwork.dump 32410]</label>
-				<visible>!Skin.HasSetting(disablecontext:script.artwork.dump) + [String.IsEqual(ListItem.DBTYPE, artist) | String.IsEqual(ListItem.DBTYPE, album) | String.IsEqual(ListItem.DBTYPE, song) | String.IsEqual(ListItem.DBTYPE, movie) | String.IsEqual(ListItem.DBTYPE, set) | String.IsEqual(ListItem.DBTYPE, tvshow) | String.IsEqual(ListItem.DBTYPE, episode) | String.IsEqual(ListItem.DBTYPE, musicvideo)]</visible>
+				<visible>!Skin.HasSetting(disablecontext:script.artwork.dump) + [String.IsEqual(ListItem.DBTYPE, artist) | String.IsEqual(ListItem.DBTYPE, album) | String.IsEqual(ListItem.DBTYPE, song)]</visible>
 			</item>
 		</menu>
 	</extension>
 	<extension point="xbmc.service" library="python/service.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_gb">Automatically download artwork for your media.</summary>
-		<description lang="en_gb">Artwork Dump automatically downloads artwork for media in your video and music libraries into your media file system. It only downloads artwork already added to your libraries.</description>
-		<news>v0.1.3 (2021-01-24)
-- fix: Kodi crashes with non-UTF8 titles
-- fix: support rar / zip files
-- fix: more accurate progress bar
-- fix: actually replace video thumbs if configured
-- fix: label for setting to show / hide context items
-
-v0.1.2 (2020-12-12)
-- fix: include TV seasons and movie sets when scanning recent episodes/movies</news>
+		<summary lang="en_GB">Automatically download artwork for your media.</summary>
+		<description lang="en_GB">Artwork Dump automatically downloads artwork for media in your video and music libraries into your media file system. It only downloads artwork already added to your libraries.</description>
+		<news>v0.2.0 (2021-03-07)
+- feature: action preload all artwork to texture cache
+- feature: option to add multiple fanart from scraper results
+- fix: more Kodi crashes with non-UTF8</news>
 		<source>https://github.com/rmrector/script.artwork.dump</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=258886</forum>
 		<license>The MIT License</license>

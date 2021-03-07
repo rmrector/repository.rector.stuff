@@ -1,0 +1,14 @@
+v0.2.0 (2021-03-07)
+- feature: action preload all artwork to texture cache
+- feature: option to add multiple fanart from scraper results
+- fix: more Kodi crashes with non-UTF8
+
+v0.1.3 (2021-01-24)
+- fix: Kodi crashes with non-UTF8 titles
+- fix: support rar / zip files
+- fix: more accurate progress bar
+- fix: actually replace video thumbs if configured
+- fix: label for setting to show / hide context items
+
+v0.1.2 (2020-12-12)
+- fix: include TV seasons and movie sets when scanning recent episodes/movies

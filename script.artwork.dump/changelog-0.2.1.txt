@@ -1,3 +1,7 @@
+v0.2.1 (2021-03-26)
+- fix: finding album folders from disc folders
+- fix: context menu visibility for single items
+
 v0.2.0 (2021-03-07)
 - feature: action preload all artwork to texture cache
 - feature: option to add multiple fanart from scraper results

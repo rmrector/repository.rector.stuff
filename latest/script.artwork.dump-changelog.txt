@@ -1,3 +1,6 @@
+v0.2.3 (2022-02-21)
+- fix: somewhat speed up scanning
+
 v0.2.2 (2021-08-01)
 - fix: don't crash when processing empty list
 - fix: start auto processing music after library scan

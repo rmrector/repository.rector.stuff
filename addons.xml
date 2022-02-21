@@ -26,7 +26,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.artwork.dump" name="Artwork Dump" version="0.2.2" provider-name="rmrector">
+<addon id="script.artwork.dump" name="Artwork Dump" version="0.2.3" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -53,20 +53,13 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Automatically download artwork for your media.</summary>
 		<description lang="en_GB">Artwork Dump automatically downloads artwork for media in your video and music libraries into your media file system. It only downloads artwork already added to your libraries.</description>
-		<news>v0.2.2 (2021-08-01)
-- fix: don't crash when processing empty list
-- fix: start auto processing music after library scan
-- fix: processing albums split across multiple folders
-- fix: don't leave last message on progress bar
+		<news>v0.2.3 (2022-02-21)
+- fix: somewhat speed up scanning
 
-v0.2.1 (2021-03-26)
-- fix: finding album folders from disc folders
-- fix: context menu visibility for single items
-
-v0.2.0 (2021-03-07)
+v0.2.0 to v0.2.2 (2021-08-01)
 - feature: action preload all artwork to texture cache
 - feature: option to add multiple fanart from scraper results
-- fix: more Kodi crashes with non-UTF8</news>
+- fix: processing albums split across multiple folders</news>
 		<source>https://github.com/rmrector/script.artwork.dump</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=258886</forum>
 		<license>The MIT License</license>

@@ -1,3 +1,6 @@
+v0.2.5 (2022-03-15)
+- fix: error in 0.2.4
+
 v0.2.4 (2022-03-14)
 - fix: crash when scanning
 - fix: add a few more logging statements

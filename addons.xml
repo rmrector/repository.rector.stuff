@@ -26,7 +26,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="script.artwork.dump" name="Artwork Dump" version="0.2.5" provider-name="rmrector">
+<addon id="script.artwork.dump" name="Artwork Dump" version="0.3.0" provider-name="rmrector">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="xbmc.json" version="6.20.0" />
@@ -53,15 +53,12 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Automatically download artwork for your media.</summary>
 		<description lang="en_GB">Artwork Dump automatically downloads artwork for media in your video and music libraries into your media file system. It only downloads artwork already added to your libraries.</description>
-		<news>v0.2.5 (2022-03-15)
-- fix: error in 0.2.4
-
-v0.2.4 (2022-03-14)
-- fix: crash when scanning
-
-v0.2.0 - v0.2.3 (2022-03-14)
-- fix: somewhat speed up scanning
-- feature: option to add multiple fanart from scraper results</news>
+		<news>v0.3.0 (2024-01-27)
+- feature: add option to disable tracking processed items in a database
+- feature: pre-cache special images, like video thumbnails
+- fix: download artwork for BDMV and VIDEO_TS to correct folder
+- improve: slightly faster image pre-caching that doesn't require HTTP
+- improve: better strategy to pick multiple fanart from scraper</news>
 		<source>https://github.com/rmrector/script.artwork.dump</source>
 		<forum>https://forum.kodi.tv/showthread.php?tid=258886</forum>
 		<license>The MIT License</license>

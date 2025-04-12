@@ -1,3 +1,6 @@
+v0.4.1 (2025-04-12)
+- fix: error when manually pre-caching images
+
 v0.4.0 (2025-03-23)
 - feature: scan new music exactly by "date new" and "date modified"
 - feature: add option to scan new videos by "date added"
